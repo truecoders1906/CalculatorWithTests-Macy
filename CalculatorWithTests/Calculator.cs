@@ -7,7 +7,8 @@ namespace CalculatorWithTests
     {
         public decimal Add(decimal x, decimal y)
         {
-            throw new NotImplementedException();
+            decimal answer;
+            return  answer = x + y; 
         }
         public int Subtract(decimal x, decimal y)
         {
@@ -24,7 +25,7 @@ namespace CalculatorWithTests
             throw new NotImplementedException();
 
         }
-        public int Factorial(decimal x, decimal y)
+        public int Factorial(decimal x)
         {
             throw new NotImplementedException();
 

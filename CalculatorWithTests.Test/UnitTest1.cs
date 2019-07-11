@@ -29,7 +29,7 @@ namespace CalculatorWithTests.Test
         [InlineData(10, 4, 6)]
         [InlineData(15, 15, 0)]
         [InlineData(4, 21, -17)]
-        [InlineData(new double[] { 3, 12 }, -9)]
+        [InlineData( 3, 12, -9)]
 
         public void Difference(decimal x, decimal y, decimal expected)
         {
@@ -44,11 +44,11 @@ namespace CalculatorWithTests.Test
 
         }
         [Theory]
-        [InlineData(new double[] { 2, 5 }, 10)]
-        [InlineData(new double[] { 10, 4 }, 40)]
-        [InlineData(new double[] { 15, 15 }, 225)]
-        [InlineData(new double[] { 4, 21 }, 84)]
-        [InlineData(new double[] { 3, 12 }, 36)]
+        [InlineData(2, 5, 10)]
+        [InlineData(10, 4, 40)]
+        [InlineData(15, 15, 225)]
+        [InlineData(4, 21, 84)]
+        [InlineData(3, 12, 36)]
 
         public void Product(decimal x, decimal y, decimal expected)
         {
@@ -92,7 +92,7 @@ namespace CalculatorWithTests.Test
             CalculatorWithTests calculator = new CalculatorWithTests();
 
             //Act
-            decimal actual = calculator.Factorial(x, y);
+            decimal actual = calculator.Factorial(x);
 
             //Assert
             Assert.Equal(expected, actual);
