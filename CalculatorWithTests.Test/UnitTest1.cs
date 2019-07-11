@@ -25,7 +25,7 @@ namespace CalculatorWithTests.Test
             Assert.Equal(expected, actual);
         }
         [Theory]
-        [InlineData( 2, 5, 3)]
+        [InlineData( 2, 5, -3)]
         [InlineData(10, 4, 6)]
         [InlineData(15, 15, 0)]
         [InlineData(4, 21, -17)]
@@ -66,7 +66,7 @@ namespace CalculatorWithTests.Test
         [InlineData(10, 4, 2.5)]
         [InlineData(15, 15, 1)]
         [InlineData(4, 2, 2)]
-        [InlineData(3, 1, 1)]
+        [InlineData(3, 1, 3)]
 
         public void Quotient(decimal x, decimal y, decimal expected)
         {

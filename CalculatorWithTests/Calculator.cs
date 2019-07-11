@@ -18,13 +18,13 @@ namespace CalculatorWithTests
         }
         public decimal Multipy(decimal x, decimal y)
         {
-            throw new NotImplementedException();
-
+            decimal answer;
+            return answer = x * y;
         }
         public decimal Divide(decimal x, decimal y)
         {
-            throw new NotImplementedException();
-
+            decimal answer;
+            return answer = x / y;
         }
         public decimal Factorial(decimal x)
         {
