@@ -10,22 +10,23 @@ namespace CalculatorWithTests
             decimal answer;
             return  answer = x + y; 
         }
-        public int Subtract(decimal x, decimal y)
+        public decimal Subtract(decimal x, decimal y)
+        {
+            decimal answer;
+            return answer = x - y;
+
+        }
+        public decimal Multipy(decimal x, decimal y)
         {
             throw new NotImplementedException();
 
         }
-        public int Multipy(decimal x, decimal y)
+        public decimal Divide(decimal x, decimal y)
         {
             throw new NotImplementedException();
 
         }
-        public int Divide(decimal x, decimal y)
-        {
-            throw new NotImplementedException();
-
-        }
-        public int Factorial(decimal x)
+        public decimal Factorial(decimal x)
         {
             throw new NotImplementedException();
 
